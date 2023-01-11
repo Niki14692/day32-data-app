@@ -30,5 +30,5 @@ match option_y:
 
 # add chart
 st.subheader(f"{option_x} and {option_y}")
-figure =px.scatter(x=x_array, y=y_array, labels={"x":f"{option_x}", "y":f"{option_y}"})
+figure =px.scatter(x=x_array, y=y_array, labels={"x":option_x, "y":option_y})
 st.plotly_chart(figure)
